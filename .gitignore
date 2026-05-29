@@ -1,0 +1,8 @@
+# Virtual environment
+backend/venv/
+backend/dataset/
+frontend/node_modules/
+
+# Zip files
+*.zip
+\backend\models\knn_model.pkl

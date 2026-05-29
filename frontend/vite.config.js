@@ -10,6 +10,6 @@ export default defineConfig({
     },
   },
   preview: {
-    allowedHosts: ['bot-iot.onrender.com'],
+    allowedHosts: ['botiot.onrender.com'],
   },
 })

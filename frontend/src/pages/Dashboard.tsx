@@ -41,7 +41,7 @@ const Dashboard = () => {
     setManualInput({ protocol: 'TCP' }) // reset manual inputs when model changes
     setErrors({}) // clear any validation errors
 
-    fetch(`http://localhost:5020/models/${selectedModel}/features`)
+    fetch(`https://bot-iot-2-0.onrender.com/models/${selectedModel}/features`)
       .then(r => {
         if (!r.ok) throw new Error('Failed to load features')
         return r.json()
@@ -139,7 +139,7 @@ const Dashboard = () => {
       form.append('model', selectedModel);
 
       console.log('Sending request to backend...');
-      const res = await fetch('http://localhost:5020/upload', {
+      const res = await fetch('https://bot-iot-2-0.onrender.com/upload', {
         method: 'POST',
         body: form,
       });

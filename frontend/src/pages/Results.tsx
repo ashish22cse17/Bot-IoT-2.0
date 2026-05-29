@@ -32,15 +32,15 @@ const Results = () => {
   useEffect(() => {
     async function fetchMetrics() {
       try {
-        const rfRes = await fetch("http://localhost:5020/models/rf/metrics");
-        const svmRes = await fetch("http://localhost:5020/models/svm/metrics");
-        const dnnRes = await fetch("http://localhost:5020/models/dnn/metrics");
-        const cnnRes = await fetch("http://localhost:5020/models/cnn/metrics");
+        const rfRes = await fetch("https://bot-iot-2-0.onrender.com/models/rf/metrics");
+        const svmRes = await fetch("https://bot-iot-2-0.onrender.com/models/svm/metrics");
+        const dnnRes = await fetch("https://bot-iot-2-0.onrender.com/models/dnn/metrics");
+        const cnnRes = await fetch("https://bot-iot-2-0.onrender.com/models/cnn/metrics");
 
-        const svmDat = await fetch("http://localhost:5020/models/svm/dataset");
-        const rfDat = await fetch("http://localhost:5020/models/rf/dataset");
-        const dnnDat = await fetch("http://localhost:5020/models/dnn/dataset");
-        const cnnDat = await fetch("http://localhost:5020/models/cnn/dataset");
+        const svmDat = await fetch("https://bot-iot-2-0.onrender.com/models/svm/dataset");
+        const rfDat = await fetch("https://bot-iot-2-0.onrender.com/models/rf/dataset");
+        const dnnDat = await fetch("https://bot-iot-2-0.onrender.com/models/dnn/dataset");
+        const cnnDat = await fetch("https://bot-iot-2-0.onrender.com/models/cnn/dataset");
         
         const rfData = await rfRes.json();
         const svmData = await svmRes.json();

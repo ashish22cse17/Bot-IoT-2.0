@@ -81,7 +81,7 @@ export async function predict(request: PredictionRequest): Promise<PredictionRes
   console.debug('[predict] sending payload to backend:', payload);
 
   try {
-    const response = await fetch('http://localhost:5020/predict', {
+    const response = await fetch('https://bot-iot-2-0.onrender.com/predict', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -205,7 +205,7 @@ export function validateFeatures(features: Partial<NetworkFeatures>): { valid: b
 
 export async function predictFromAPI(request: PredictionRequest): Promise<PredictionResult> {
   // backend expects model + feature columns at the top level
-  const response = await fetch('http://localhost:5020/predict', {
+  const response = await fetch('https://bot-iot-2-0.onrender.com/predict', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

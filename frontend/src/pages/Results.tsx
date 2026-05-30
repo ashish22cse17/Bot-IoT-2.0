@@ -856,11 +856,16 @@ const Results = () => {
                 </div>
               </div>
 
-              {/* Coming Soon Badge */}
-              <div className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary/10 border border-primary/30">
-                <span className="w-2 h-2 rounded-full bg-neon-green animate-pulse" />
-                <span className="font-mono text-primary">Repository Coming Soon</span>
-              </div>
+              {/* GitHub Link Button */}
+              <a 
+                href="https://github.com/ashish22cse17/Bot-IoT-2.0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground hover:bg-primary/90 transition-colors font-mono font-semibold"
+              >
+                <Github className="w-4 h-4" />
+                View Repository
+              </a>
             </div>
           </div>
         </div>
